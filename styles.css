@@ -178,6 +178,56 @@ footer {
     transform: scale(1.05);
 }
 
+/* CSS Animations */
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for hover scale effect */
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* Applying animations */
+.hero-content {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.offer-item {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.product {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.cta-button, .offer-item, .contact-form button {
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.cta-button:hover, .contact-form button:hover, .offer-item:hover {
+    animation: scaleUp 0.3s forwards;
+}
+
+/* Slide-up effect for hero section */
+.hero {
+    animation: fadeIn 1s ease-in-out;
+}
+
 .offer-item:hover {
     background-color: #ececec;
 }
