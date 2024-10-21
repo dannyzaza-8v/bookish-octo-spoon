@@ -1,7 +1,11 @@
 EventFunShop/
-├── index.html
-├── products.html
-├── about.html
-├── contact.html
-├── styles.css
-└── images/
+├── index.html       # Homepage HTML
+├── products.html    # Products page HTML
+├── about.html       # About Us page HTML
+├── contact.html     # Contact page HTML
+├── styles.css       # CSS file
+└── images/          # Folder containing the images
+    ├── hero.jpg
+    ├── party_hat.jpg
+    ├── balloons.jpg
+    └── confetti.jpg
