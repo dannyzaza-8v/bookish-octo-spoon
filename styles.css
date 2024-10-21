@@ -9,6 +9,19 @@ body, html {
     flex-direction: column;
 }
 
+/* JavaScript-triggered fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 header {
     background-color: #007bff;
     padding: 15px;
