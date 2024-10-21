@@ -16,10 +16,48 @@
         </nav>
     </header>
 
-    <section class="contact-section">
-        <h2>Contact Us</h2>
-        <p>For any inquiries, reach out to us at <a href="mailto:info@eventfunshop.com">info@eventfunshop.com</a> or call us at +353-123-4567.</p>
-    </section>
+    <div class="content">
+        <section class="hero" style="background-image: url('images/contact_us_hero.jpg');">
+            <div class="hero-content">
+                <h1>Get in Touch</h1>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h2>We'd Love to Hear From You!</h2>
+                <p>If you have any questions, feedback, or inquiries, feel free to reach out to us using the contact details below.</p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="images/email_icon.png" alt="Email Icon" class="contact-icon">
+                        <p>Email: <a href="mailto:info@eventfunshop.com">info@eventfunshop.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/phone_icon.png" alt="Phone Icon" class="contact-icon">
+                        <p>Phone: +353-123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/address_icon.png" alt="Address Icon" class="contact-icon">
+                        <p>Address: Dublin</p>
+                    </div>
+                </div>
+
+                <form action="#" method="POST" class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Event Fun Shop. All rights reserved.</p>
