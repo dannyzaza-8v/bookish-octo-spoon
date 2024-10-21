@@ -1,10 +1,12 @@
 /* Global Styles */
-body {
+body, html {
+    height: 100%;
+    margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -58,6 +60,11 @@ header nav a:hover {
     background-color: #d43f20;
 }
 
+/* Content Wrapper */
+.content {
+    flex: 1;
+}
+
 /* Product Grid */
 .product-grid {
     display: flex;
@@ -86,18 +93,91 @@ header nav a:hover {
     margin: 15px 0;
 }
 
-.btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
 /* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* About Us Page Styles */
+.offer-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.offer-item {
+    width: 30%;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.offer-item:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Info Styling */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.contact-icon {
+    width: 30px;
+    margin-right: 15px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
     padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Animations */
+.cta-button, .offer-item, .contact-form button {
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.cta-button:hover, .contact-form button:hover {
+    background-color: #ff5733;
+    transform: scale(1.05);
+}
+
+.offer-item:hover {
+    background-color: #ececec;
 }
