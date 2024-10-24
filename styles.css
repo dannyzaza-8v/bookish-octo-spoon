@@ -9,19 +9,6 @@ body, html {
     flex-direction: column;
 }
 
-/* JavaScript-triggered fade-in effect */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
 header {
     background-color: #007bff;
     padding: 15px;
@@ -87,165 +74,6 @@ header nav a:hover {
 }
 
 .product {
-    background-color: white;
-    border: 1px solid #ddd;
-    margin: 15px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    border-radius: 8px;
-}
-
-.product img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.product h3 {
-    margin: 15px 0;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-}
-
-/* About Us Page Styles */
-.offer-list {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px 0;
-}
-
-.offer-item {
-    width: 30%;
-    padding: 15px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.offer-item:hover {
-    transform: scale(1.05);
-}
-
-/* Contact Info Styling */
-.contact-info {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px 0;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.contact-icon {
-    width: 30px;
-    margin-right: 15px;
-}
-
-/* Contact Form Styles */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Animations */
-.cta-button, .offer-item, .contact-form button {
-    transition: background-color 0.3s, transform 0.3s ease-in-out;
-}
-
-.cta-button:hover, .contact-form button:hover {
-    background-color: #ff5733;
-    transform: scale(1.05);
-}
-
-/* CSS Animations */
-
-/* Keyframes for fade-in effect */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Keyframes for hover scale effect */
-@keyframes scaleUp {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.05);
-    }
-}
-
-/* Applying animations */
-.hero-content {
-    animation: fadeIn 1s ease-in-out;
-}
-
-.offer-item {
-    animation: fadeIn 1.2s ease-in-out;
-}
-
-.product {
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.cta-button, .offer-item, .contact-form button {
-    transition: background-color 0.3s, transform 0.3s ease-in-out;
-}
-
-.cta-button:hover, .contact-form button:hover, .offer-item:hover {
-    animation: scaleUp 0.3s forwards;
-}
-
-/* Slide-up effect for hero section */
-.hero {
-    animation: fadeIn 1s ease-in-out;
-}
-
-.offer-item:hover {
-    background-color: #ececec;
-}
-/* Product Hover Effect */
-.product {
     position: relative;
     background-color: white;
     border: 1px solid #ddd;
@@ -286,9 +114,9 @@ footer {
     opacity: 1;
 }
 
-/* Product button hover animation */
+/* Buy Now Button - styled differently from the default blue */
 .product .buy-now {
-    background-color: #007bff;
+    background-color: #ff5733;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -297,6 +125,14 @@ footer {
 }
 
 .product:hover .buy-now {
-    background-color: #0056b3;
+    background-color: #d43f20;
 }
 
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
