@@ -30,24 +30,52 @@
         <section class="featured-products">
             <h2>Featured Products</h2>
             <div class="product-grid">
-                <div class="product">
+
+                <!-- Product 1: Party Hat -->
+                <div class="product" onclick="window.location.href='product1.html'">
                     <img src="images/party_hat.jpg" alt="Party Hat">
                     <h3>Party Hat</h3>
                     <p>€5.00</p>
-                    <a href="products1.html" class="btn">Buy Now</a>
+
+                    <!-- Hover Overlay Content -->
+                    <div class="product-overlay">
+                        <p>A fun and colorful party hat to make your event stand out!</p>
+                    </div>
+
+                    <!-- Buy Now Button -->
+                    <a href="product1.html" class="buy-now">View More</a>
                 </div>
-                <div class="product">
+
+                <!-- Product 2: Balloons -->
+                <div class="product" onclick="window.location.href='product2.html'">
                     <img src="images/balloons.jpg" alt="Colorful Balloons">
                     <h3>Colorful Balloons (Pack of 20)</h3>
                     <p>€7.00</p>
-                    <a href="products.html" class="btn">Buy Now</a>
+
+                    <!-- Hover Overlay Content -->
+                    <div class="product-overlay">
+                        <p>Bright balloons to make any party stand out!</p>
+                    </div>
+
+                    <!-- Buy Now Button -->
+                    <a href="product2.html" class="buy-now">View More</a>
                 </div>
-                <div class="product">
+
+                <!-- Product 3: Confetti -->
+                <div class="product" onclick="window.location.href='product3.html'">
                     <img src="images/confetti.jpg" alt="Party Confetti">
                     <h3>Party Confetti</h3>
                     <p>€3.00</p>
-                    <a href="products.html" class="btn">Buy Now</a>
+
+                    <!-- Hover Overlay Content -->
+                    <div class="product-overlay">
+                        <p>Colorful confetti to celebrate in style!</p>
+                    </div>
+
+                    <!-- Buy Now Button -->
+                    <a href="product3.html" class="buy-now">View More</a>
                 </div>
+
             </div>
         </section>
     </div>
@@ -55,31 +83,5 @@
     <footer>
         <p>&copy; 2024 Event Fun Shop. All rights reserved.</p>
     </footer>
-
-<script>
-    // JavaScript Intersection Observer for Scroll Animations
-    document.addEventListener("DOMContentLoaded", function() {
-        const observerOptions = {
-            threshold: 0.2
-        };
-
-        const fadeInElements = document.querySelectorAll(".fade-in");
-
-        const observer = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        fadeInElements.forEach(element => {
-            observer.observe(element);
-        });
-    });
-</script>
-
-    
 </body>
 </html>
